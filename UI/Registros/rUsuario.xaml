@@ -1,0 +1,33 @@
+﻿<Window x:Class="LogIn.UI.Registros.rUsuario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogIn.UI.Registros"
+        mc:Ignorable="d"
+        Title="rUsuario" Height="179" Width="259">
+    <Grid>
+        <StackPanel>
+
+            <!--Usuario-->
+            <Label Content="Usuario: "/>
+            <TextBox x:Name="UsuarioTextBox"/>
+
+            <!--Balance-->
+            <Label Content="Contraseña: "/>
+            <PasswordBox x:Name="ContraseñaTextBox"/>
+
+            <!--Barra de BOTONES-->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0" Width="361">
+                <Button x:Name="GuardarButton" Margin="10,0" Width="230" Height="28" Click="GuardarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Image Source="\Iconos\disquete.png"/>
+                        <Label Content="Guardar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+            
+        </StackPanel>
+        
+    </Grid>
+</Window>
